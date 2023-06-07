@@ -1,17 +1,17 @@
-% preprocess the EEG data for ASD research
+% preprocess the EEG data for research
 % Author: Weifeng Li 2023/8/4
 %-----------------------------------------------
 %%
 clc;clear;clf;
 % initiate the vars
-raw_dataset_path = 'D:\inventor\ASD\sub4\20230420sub4_301\sub04-20230420-150700\default - 20230420T170819\default-20230420T170819.set';
-ica_dataset_filename = 'ica_EEG.set';
-ica_dataset_path = 'D:\inventor\ASD\sub4\20230420sub4_301\sub04-20230420-150700\default - 20230420T170819\';
-final_dataset_filename = 'final_EEG.set';
-final_dataset_path = 'D:\inventor\ASD\sub4\20230420sub4_301\sub04-20230420-150700\default - 20230420T170819\';
+raw_dataset_path = 'D:\xxx\xxx\xxx.set';
+ica_dataset_filename = 'xxx.set';
+ica_dataset_path = 'D:\ixxx\xxx\xxx\';
+final_dataset_filename = 'xxx.set';
+final_dataset_path = 'D:\xxx\xxx\xxx\';
 rmv_chans = {'STATUS','Counter 2power24','M1','M2'};
 filter_low_cut = 4;
-filter_high_cut = 45;
+filter_high_cut = 55;
 event_info_txt = 'event_3min.txt'; % generate with //event_txt.m//
 per_range = [0,2]; % the period range for each stamp
 amp_range = [-100,100];
